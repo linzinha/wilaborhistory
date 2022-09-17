@@ -127,8 +127,6 @@ button {
     word-wrap: break-word;
 }
 
-
-
 .content {
     display: flex;
     align-items: center;
@@ -164,7 +162,7 @@ button {
     flex-direction: column;
 }
 
-#about-us, #get-involved {
+.anchor-sections {
     flex-direction: row;
     position: relative;
     top: 30px;
@@ -173,18 +171,18 @@ button {
     height: max-content;
 }
 
-#about-us aside, #get-involved aside {
+.anchor-sections aside {
     width: 20vw;
 }
 
-#about-us div, #get-involved div {
+.anchor-sections div {
     width: 60vw;
     padding: 53px 0 0 10px;
     height: max-content;
     max-width: 792px;
 }
 
-#about-us nav, #get-involved nav {
+.anchor-sections nav {
     display: flex;
     flex-direction: column;
     z-index: 1000;
@@ -208,4 +206,38 @@ button {
     top: 96px;
     left: 70vw;
     width: 20vw;
+}
+
+@media only screen and (max-width: 1090px) {
+    #main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: unset;
+        margin-left: 1vw;
+        position: fixed;
+        width: 21vw;
+        top: 79px;
+        left: initial;
+        z-index: 1000;
+        min-width: unset;
+    }
+    .nav {
+    padding: 0px 10px;
+    margin: 5px 0px;
+    font-weight: bold;
+}
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 71vw;
+        position: relative;
+        top: 143px;
+        left: 108px;
+    }
+    .main-menu-link {
+        color: #fff;
+        background-color: #333;
+        width: 100%;
+    }
 }
